@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - WebHub Programming Basic Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0d1b2a, #1b263b);
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            font-size: 36px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-shadow: 0 0 20px #2a5298;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(30, 60, 114, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(30, 60, 114, 0.5);
+        }
+
+        .content h2 {
+            font-size: 28px;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+            letter-spacing: 4px;
+        }
+
+        .content p {
+            line-height: 1.8;
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        pre {
+            background: rgba(42, 82, 152, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            color: #ffffff;
+            font-size: 16px;
+            overflow-x: auto;
+            box-shadow: 0 0 10px rgba(42, 82, 152, 0.7);
+        }
+
+        .back-btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            color: white;
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 20px rgba(42, 82, 152, 0.7);
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(42, 82, 152, 1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Python - WebHub Programming Basic Course
+    </header>
+
+    <section class="content">
+        <h2>Python Programming Language</h2>
+        <p>
+            Python ဆိုတာ အရမ်းလွယ်ကူပြီး အများစုက အခြေခံများလေ့လာစတင်ရာမှာ သုံးတဲ့ Programming Language တစ်ခုဖြစ်ပါတယ်။ 
+            Python ရဲ့ရိုးရှင်းမှုနဲ့ ပေါင်းစပ်ထားတဲ့ စွမ်းဆောင်ရည်ကြောင့် ဒေတာသိပ္ပံ, Artificial Intelligence, 
+            အင်တာနက်လုံခြုံရေးနဲ့ စက်လေ့လာမှုတို့အတွက် အရေးပါဆုံး Programming Language တစ်ခုဖြစ်လာပါတယ်။
+        </p>
+        <h3>Python ရဲ့ သမိုင်းကြောင်း</h3>
+        <p>
+            Python ကို ၁၉၈၉ ခုနှစ်က Dutch Programmer ဖြစ်တဲ့ Guido van Rossum ဆိုသူက စတင်ဖန်တီးခဲ့တယ်။ 
+            သူ့ရဲ့ ရည်ရွယ်ချက်က Programmer တွေအတွက် ရိုးရှင်းပြီး အဆင်ပြေတဲ့ဘာသာစကားတစ်ခုဖန်တီးရန် ဖြစ်ပါတယ်။ 
+            Python ရဲ့အမည်ကို သူကြိုက်နှစ်သက်တဲ့ Monty Python's Flying Circus ဆိုတဲ့ ရုပ်မြင်သံကြားအစီအစဉ်ကနေယူထားတယ်။
+        </p>
+        <h3>Python ရဲ့အရေးကြီးတဲ့အင်္ဂါရပ်များ</h3>
+        <ul>
+            <li>Syntax ရိုးရှင်းပြီး အလွယ်တကူရေးသားနိုင်ပါတယ်။</li>
+            <li>အမျိုးမျိုးသော Libraries နဲ့ Tools များပါရှိသည်။</li>
+            <li>Platform မျိုးစုံမှာ အလုပ်လုပ်နိုင်ပါတယ်။</li>
+            <li>Data Science, AI, Web Development, IoT နဲ့ Automation တို့အတွက် အသုံးဝင်သည်။</li>
+        </ul>
+
+        <h3>Python ရဲ့ နမူနာများ</h3>
+        <pre>
+# Python ကို စတင်လေ့လာမယ်
+print("မင်္ဂလာပါ Python")
+
+# Variable နဲ့ Loop
+name = "WebHub"
+for i in range(1, 4):
+    print(f"{name} Programming Course - Lesson {i}")
+
+# Function အသုံးပြုမှု
+def multiply(a, b):
+    return a * b
+
+result = multiply(3, 5)
+print(f"3 x 5 = {result}")
+        </pre>
+
+        <h3>Python ကို ဘာလို့သင်ကြားသင့်သလဲ?</h3>
+        <p>
+            Python ကို သင်ကြားရတာ လွယ်ကူပြီး စိတ်ကူးစိတ်သန်းတွေကို အလွယ်တကူအကောင်အထည်ဖော်နိုင်တာကြောင့် 
+            သင်၏ Programming နည်းလမ်းတွေကို တိုးတက်ကောင်းမွန်စေမှာပါ။
+        </p>
+        <p>
+            Python သည် ကမ္ဘာ့အကျော်ကြားဆုံး Programming Language တစ်ခုဖြစ်ပြီး Google, NASA, Facebook စတဲ့ 
+            ကုမ္ပဏီကြီးများကပါ အသုံးပြုနေပါတယ်။
+        </p>
+    </section>
+
+</body>
+</html>
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java - WebHub Programming Basic Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0d1b2a, #1b263b);
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            font-size: 36px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-shadow: 0 0 20px #2a5298;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(30, 60, 114, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(30, 60, 114, 0.5);
+        }
+
+        .content h2 {
+            font-size: 28px;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+            letter-spacing: 4px;
+        }
+
+        .content p {
+            line-height: 1.8;
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        pre {
+            background: rgba(42, 82, 152, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            color: #ffffff;
+            font-size: 16px;
+            overflow-x: auto;
+            box-shadow: 0 0 10px rgba(42, 82, 152, 0.7);
+        }
+
+        .back-btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            color: white;
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 20px rgba(42, 82, 152, 0.7);
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(42, 82, 152, 1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Java - WebHub Programming Basic Course
+    </header>
+
+    <section class="content">
+        <h2>Java Programming Language</h2>
+        <p>
+            Java သည် Object-Oriented Programming Language တစ်ခုဖြစ်ပြီး Application Development 
+            နဲ့ Software Development တွေမှာ အရမ်းအရေးကြီးပါတယ်။ Java ကို Platform-independent Programming 
+            Language အနေနဲ့ လူသိများပြီး "Write Once, Run Anywhere" ဆိုတဲ့ စကားလုံးနဲ့ ရည်မှန်းဖန်တီးထားပါတယ်။
+        </p>
+
+        <h3>Java ရဲ့ သမိုင်းကြောင်း</h3>
+        <p>
+            ၁၉၉၅ ခုနှစ်မှာ Sun Microsystems ရဲ့ James Gosling က Java ကို ဖန်တီးခဲ့ပြီး အစပိုင်းမှာ "Oak" 
+            ဆိုတဲ့နာမည်ကို အသုံးပြုခဲ့တယ်။ နောက်ပိုင်းမှာ Java လို့ပြောင်းလဲပြီး Programming World အနောက်မှာ အကျော်ကြားဆုံး 
+            Language တစ်ခု ဖြစ်လာခဲ့တယ်။
+        </p>
+
+        <h3>Java ရဲ့ အင်္ဂါရပ်များ</h3>
+        <ul>
+            <li>Platform-independent - "Write Once, Run Anywhere"</li>
+            <li>Object-Oriented Programming Language</li>
+            <li>Security Features များစွာ ပါဝင်သည်</li>
+            <li>Large Community Support</li>
+            <li>အခြေခံ Application တွေမှ Enterprise-level Application အထိ ဖန်တီးနိုင်</li>
+        </ul>
+
+        <h3>Java ရဲ့ နမူနာများ</h3>
+        <pre>
+// Java အခြေခံ နမူနာ
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("မင်္ဂလာပါ Java");
+    }
+}
+
+// Function တစ်ခုရေးမယ်
+public class SumExample {
+    public static int addNumbers(int a, int b) {
+        return a + b;
+    }
+    public static void main(String[] args) {
+        int result = addNumbers(10, 20);
+        System.out.println("အဖြေက " + result);
+    }
+}
+
+// Object-Oriented နမူနာ
+class Animal {
+    String name;
+
+    // Constructor
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    // Method
+    public void speak() {
+        System.out.println(name + " ပြောဆိုနေသည်။");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal dog = new Animal("ခွေး");
+        dog.speak();
+    }
+}
+        </pre>
+
+        <h3>Java သင်ကြားရသင့်တဲ့အကြောင်း</h3>
+        <p>
+            Java ကို Software Development, Android App Development, Web Development, Game Development နဲ့ 
+            Enterprise-level Application တွေမှာ အသုံးပြုနိုင်ပါတယ်။ ဒါ့အပြင် High Performance နဲ့ Strong Community 
+            Support ရှိတဲ့ Programming Language တစ်ခုဖြစ်တဲ့အတွက် Career Opportunity များစွာ ဖွင့်လှစ်ပေးနိုင်ပါတယ်။
+        </p>
+    </section>
+
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebHub Programming Basic Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0d1b2a, #1b263b);
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            font-size: 48px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-shadow: 0 0 20px #2a5298;
+
+        }
+
+        .intro {
+            max-width: 900px;
+            margin: 40px auto;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+            line-height: 1.8;
+            background: rgba(30, 60, 114, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(30, 60, 114, 0.5);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .button {
+            padding: 15px 40px;
+            font-size: 22px;
+            font-family: 'Orbitron', sans-serif;
+            color: white;
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 20px rgba(42, 82, 152, 0.7);
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(42, 82, 152, 1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* Background Animation */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            background: #0d1b2a;
+        }
+
+        .particle {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(100vh);
+            }
+            to {
+                transform: translateY(-10vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <!-- Animated particles -->
+        <div class="particle" style="top: 10%; left: 20%; animation-duration: 12s;"></div>
+        <div class="particle" style="top: 30%; left: 50%; animation-duration: 8s;"></div>
+        <div class="particle" style="top: 50%; left: 70%; animation-duration: 14s;"></div>
+        <div class="particle" style="top: 80%; left: 30%; animation-duration: 10s;"></div>
+        <div class="particle" style="top: 90%; left: 90%; animation-duration: 11s;"></div>
+    </div>
+
+    <header>
+        WebHub Programming Basic Course
+    </header>
+
+    <section class="intro">
+        <h2>Programming ဆိုတာဘာလဲ?</h2>
+        <p>
+            Programming ဆိုတာက ကိုယ်လက်တွေ့ အသုံးချတဲ့နည်းလမ်းတွေ၊ ပရိုဂရမ်ရေးသားခြင်းနဲ့ 
+            ကွန်ပျူတာကို ငါ့လိုရာလုပ်ဆောင်ဖို့ လေ့ကျင့်ခြင်းပါ။ Python, JavaScript နဲ့ Java 
+            သုံးခုက Programming Language ထဲမှာ အရေးပါဆုံး နေရာတွေအထိရောက်နေတဲ့ 
+            အခြေခံဘာသာများဖြစ်ပါတယ်။
+        </p>
+    </section>
+
+    <section class="buttons">
+        <a href="python.html" class="button">Python</a>
+        <a href="javascript.html" class="button">JavaScript</a>
+        <a href="java.html" class="button">Java</a>
+    </section>
+
+    <footer>
+        WebHub © 2024
+    </footer>
+</body>
+</html>

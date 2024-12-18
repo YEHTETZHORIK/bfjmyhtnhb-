@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - WebHub Programming Basic Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0d1b2a, #1b263b);
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            font-size: 36px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-shadow: 0 0 20px #2a5298;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(30, 60, 114, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(30, 60, 114, 0.5);
+        }
+
+        .content h2 {
+            font-size: 28px;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+            letter-spacing: 4px;
+        }
+
+        .content p {
+            line-height: 1.8;
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        pre {
+            background: rgba(42, 82, 152, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            color: #ffffff;
+            font-size: 16px;
+            overflow-x: auto;
+            box-shadow: 0 0 10px rgba(42, 82, 152, 0.7);
+        }
+
+        .back-btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            color: white;
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 20px rgba(42, 82, 152, 0.7);
+        }
+
+        .back-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(42, 82, 152, 1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        JavaScript - WebHub Programming Basic Course
+    </header>
+
+    <section class="content">
+        <h2>JavaScript Programming Language</h2>
+        <p>
+            JavaScript ဟာ Web Development ကဏ္ဍမှာ အရေးကြီးတဲ့ Programming Language တစ်ခုဖြစ်ပါတယ်။ 
+            HTML နဲ့ CSS အတူ JavaScript ကိုအသုံးပြုပြီး Dynamic Websites ဖန်တီးနိုင်ပါတယ်။
+            JavaScript ကို Client-side နဲ့ Server-side Programming နှစ်ဖက်စလုံးမှာ အသုံးပြုနိုင်ပါတယ်။
+        </p>
+        <h3>JavaScript ရဲ့ သမိုင်းကြောင်း</h3>
+        <p>
+            JavaScript ကို ၁၉၉၅ ခုနှစ်တွင် Netscape က ဖန်တီးခဲ့ပြီး သူ့နာမည်ကို LiveScript လို့ ခေါ်တုန်းကနေ
+            JavaScript ပြောင်းလဲခဲ့တယ်။ Web Page တွေမှာ Interactive Features ထည့်ရန် ရည်ရွယ်ဖန်တီးထားတာဖြစ်ပြီး 
+            အချိန်ကြာလာမှ Server-side Programming အထိသုံးလာကြသည်။
+        </p>
+        <h3>JavaScript ရဲ့အင်္ဂါရပ်များ</h3>
+        <ul>
+            <li>Website တွေကို Interactive အောင်လုပ်ဆောင်နိုင်ပါတယ်။</li>
+            <li>Browser မျိုးစုံမှာ အလုပ်လုပ်နိုင်ပါတယ်။</li>
+            <li>Frameworks (React, Angular, Vue.js) နဲ့ အလွန်လိုက်လျောစွာ အသုံးပြုနိုင်သည်။</li>
+            <li>Backend Development အတွက် Node.js တွင် အသုံးပြုနိုင်သည်။</li>
+        </ul>
+
+        <h3>JavaScript ရဲ့ နမူနာများ</h3>
+        <pre>
+// JavaScript ကို စတင်လေ့လာမယ်
+console.log("မင်္ဂလာပါ JavaScript");
+
+// Function အသုံးပြုမှု
+function greet(name) {
+    return `မင်္ဂလာပါ ${name}`;
+}
+console.log(greet("WebHub"));
+
+// DOM Manipulation
+document.getElementById("example").innerText = "Hello from JavaScript!";
+        </pre>
+
+        <h3>JavaScript ကို ဘာလို့သင်ကြားသင့်သလဲ?</h3>
+        <p>
+            JavaScript သည် Web Development ရဲ့ အခြေခံအင်္ဂါရပ်များကို ထည့်သွင်းဖန်တီးရာတွင် မရှိမဖြစ်အရေးပါသည်။ 
+            Website မှာ Animation, Buttons, Slides တို့လို Dynamic Features ထည့်သွင်းဖန်တီးရန် အသုံးဝင်လွန်းပါတယ်။
+        </p>
+        <p>
+            ဒါ့အပြင်, JavaScript သည် Mobile App Development, Game Development နဲ့ Backend Programming အထိ အသုံးပြုနိုင်ပြီး 
+            Career Opportunity တွေ များစွာဖွင့်လှစ်ပေးနိုင်ပါသည်။
+        </p>
+    </section>
+</body>
+</html>
